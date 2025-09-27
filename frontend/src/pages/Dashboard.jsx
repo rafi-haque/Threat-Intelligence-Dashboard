@@ -415,8 +415,9 @@ function Dashboard() {
         sx={{
           minHeight: '100vh',
           background: theme.palette.mode === 'dark' 
-            ? 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%)'
-            : 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%)',
+            ? 'linear-gradient(135deg, #0a0a0a 0%, #1e1e2e 30%, #0f0f23 70%, #0a0a0a 100%)'
+            : 'linear-gradient(135deg, #f8fafc 0%, #e3f2fd 30%, #f3e5f5 70%, #f8fafc 100%)',
+          transition: 'background 0.5s ease-in-out',
           position: 'relative',
           '&::before': {
             content: '""',
@@ -449,7 +450,16 @@ function Dashboard() {
         >
           <Toolbar>
             <Shield sx={{ mr: 2, color: 'primary.main' }} />
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography 
+              variant="h5" 
+              component="div" 
+              sx={{ 
+                flexGrow: 1,
+                fontWeight: 700,
+                fontSize: '1.5rem',
+                letterSpacing: '0.02em'
+              }}
+            >
               Threat Intelligence Dashboard
             </Typography>
             <FormControlLabel
@@ -473,31 +483,121 @@ function Dashboard() {
         <Container maxWidth="xl" sx={{ py: 3, position: 'relative', zIndex: 1 }}>
           {/* Hero Section */}
           <Box sx={{ textAlign: 'center', mb: 4 }}>
-            <Typography variant="h3" gutterBottom>
+            <Typography 
+              variant="h2" 
+              gutterBottom
+              sx={{
+                fontWeight: 900,
+                fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
+                letterSpacing: '-0.03em',
+                lineHeight: 1.1,
+                textAlign: 'center',
+                background: theme.palette.mode === 'dark'
+                  ? 'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #06B6D4 100%)'
+                  : 'linear-gradient(135deg, #1E40AF 0%, #7C3AED 50%, #0891B2 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                mb: 3,
+                textShadow: theme.palette.mode === 'dark' 
+                  ? '0 4px 20px rgba(59, 130, 246, 0.3)'
+                  : '0 4px 20px rgba(30, 64, 175, 0.2)'
+              }}
+            >
               Cybersecurity Threat Intelligence
             </Typography>
-            <Typography variant="h6" color="text.secondary" gutterBottom>
+            <Typography 
+              variant="h5" 
+              color="text.secondary" 
+              gutterBottom
+              sx={{
+                fontWeight: 500,
+                fontSize: { xs: '1.25rem', sm: '1.5rem', md: '1.75rem' },
+                opacity: 0.9,
+                maxWidth: '700px',
+                mx: 'auto',
+                mb: 4,
+                textAlign: 'center',
+                lineHeight: 1.4,
+                letterSpacing: '0.01em'
+              }}
+            >
               Real-time monitoring and analysis of global security threats
             </Typography>
             <Chip
               icon={<CheckCircle />}
               label="SYSTEM ONLINE"
               color="success"
-              sx={{ mt: 2, fontWeight: 'bold' }}
+              sx={{ 
+                mt: 1, 
+                fontWeight: 'bold',
+                px: 2,
+                py: 0.5,
+                fontSize: '0.875rem',
+                boxShadow: `0 4px 12px ${alpha(theme.palette.success.main, 0.3)}`,
+                '&:hover': {
+                  transform: 'translateY(-1px)',
+                  boxShadow: `0 6px 16px ${alpha(theme.palette.success.main, 0.4)}`,
+                },
+                transition: 'all 0.2s ease-in-out'
+              }}
             />
           </Box>
 
           {/* Statistics Cards */}
           <Grid container spacing={3} sx={{ mb: 4, justifyContent: 'center' }}>
             <Grid item xs={12} sm={6} md={3} lg={2.8}>
-              <Card sx={{ cursor: 'pointer' }} onClick={() => toggleCardExpansion('total')}>
+              <Card 
+                sx={{ 
+                  cursor: 'pointer',
+                  borderRadius: 3,
+                  background: theme.palette.mode === 'dark'
+                    ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%)'
+                    : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: `1px solid ${alpha(theme.palette.primary.main, 0.1)}`,
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  '&:hover': {
+                    transform: 'translateY(-4px) scale(1.02)',
+                    boxShadow: `0 12px 40px ${alpha(theme.palette.primary.main, 0.25)}`,
+                    border: `1px solid ${alpha(theme.palette.primary.main, 0.3)}`,
+                  }
+                }} 
+                onClick={() => toggleCardExpansion('total')}
+              >
                 <CardContent>
                   <Box display="flex" alignItems="center" justifyContent="space-between">
                     <Box>
-                      <Typography color="text.secondary" gutterBottom variant="body2">
+                      <Typography 
+                        color="text.secondary" 
+                        gutterBottom 
+                        variant="body1"
+                        sx={{
+                          fontWeight: 700,
+                          fontSize: '0.95rem',
+                          letterSpacing: '0.1em',
+                          textAlign: 'center',
+                          mb: 1.5
+                        }}
+                      >
                         TOTAL THREATS
                       </Typography>
-                      <Typography variant="h4" component="div" color="primary.main">
+                      <Typography 
+                        variant="h3" 
+                        component="div" 
+                        color="primary.main"
+                        sx={{
+                          fontWeight: 900,
+                          fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                          letterSpacing: '-0.03em',
+                          textAlign: 'center',
+                          textShadow: theme.palette.mode === 'dark' 
+                            ? '0 4px 16px rgba(59, 130, 246, 0.4)'
+                            : '0 4px 16px rgba(59, 130, 246, 0.3)',
+                          transition: 'all 0.3s ease-in-out',
+                          lineHeight: 1.1
+                        }}
+                      >
                         {stats.total.toLocaleString()}
                       </Typography>
                     </Box>
@@ -521,14 +621,57 @@ function Dashboard() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={2.8}>
-              <Card sx={{ cursor: 'pointer' }} onClick={() => toggleCardExpansion('recent')}>
+              <Card 
+                sx={{ 
+                  cursor: 'pointer',
+                  borderRadius: 3,
+                  background: theme.palette.mode === 'dark'
+                    ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%)'
+                    : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: `1px solid ${alpha(theme.palette.secondary.main, 0.1)}`,
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  '&:hover': {
+                    transform: 'translateY(-4px) scale(1.02)',
+                    boxShadow: `0 12px 40px ${alpha(theme.palette.secondary.main, 0.25)}`,
+                    border: `1px solid ${alpha(theme.palette.secondary.main, 0.3)}`,
+                  }
+                }} 
+                onClick={() => toggleCardExpansion('recent')}
+              >
                 <CardContent>
                   <Box display="flex" alignItems="center" justifyContent="space-between">
                     <Box>
-                      <Typography color="text.secondary" gutterBottom variant="body2">
+                      <Typography 
+                        color="text.secondary" 
+                        gutterBottom 
+                        variant="body1"
+                        sx={{
+                          fontWeight: 700,
+                          fontSize: '0.95rem',
+                          letterSpacing: '0.1em',
+                          textAlign: 'center',
+                          mb: 1.5
+                        }}
+                      >
                         RECENT (24H)
                       </Typography>
-                      <Typography variant="h4" component="div" color="warning.main">
+                      <Typography 
+                        variant="h3" 
+                        component="div" 
+                        color="secondary.main"
+                        sx={{
+                          fontWeight: 900,
+                          fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                          letterSpacing: '-0.03em',
+                          textAlign: 'center',
+                          textShadow: theme.palette.mode === 'dark' 
+                            ? '0 4px 16px rgba(156, 39, 176, 0.4)'
+                            : '0 4px 16px rgba(156, 39, 176, 0.3)',
+                          transition: 'all 0.3s ease-in-out',
+                          lineHeight: 1.1
+                        }}
+                      >
                         {stats.recent_count.toLocaleString()}
                       </Typography>
                     </Box>
@@ -554,20 +697,70 @@ function Dashboard() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={2.8}>
-              <Card sx={{ cursor: 'pointer' }} onClick={() => toggleCardExpansion('types')}>
+              <Card 
+                sx={{ 
+                  cursor: 'pointer',
+                  borderRadius: 3,
+                  background: theme.palette.mode === 'dark'
+                    ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%)'
+                    : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: `1px solid ${alpha(theme.palette.info.main, 0.1)}`,
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  '&:hover': {
+                    transform: 'translateY(-4px) scale(1.02)',
+                    boxShadow: `0 12px 40px ${alpha(theme.palette.info.main, 0.25)}`,
+                    border: `1px solid ${alpha(theme.palette.info.main, 0.3)}`,
+                  }
+                }} 
+                onClick={() => toggleCardExpansion('types')}
+              >
                 <CardContent>
                   <Box display="flex" alignItems="center" justifyContent="space-between">
                     <Box>
-                      <Typography color="text.secondary" gutterBottom variant="body2">
+                      <Typography 
+                        color="text.secondary" 
+                        gutterBottom 
+                        variant="body1"
+                        sx={{
+                          fontWeight: 700,
+                          fontSize: '0.95rem',
+                          letterSpacing: '0.1em',
+                          textAlign: 'center',
+                          mb: 1.5
+                        }}
+                      >
                         THREAT TYPES
                       </Typography>
-                      <Typography variant="h4" component="div" color="secondary.main">
+                      <Typography 
+                        variant="h3" 
+                        component="div" 
+                        color="secondary.main"
+                        sx={{
+                          fontWeight: 900,
+                          fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                          letterSpacing: '-0.03em',
+                          textAlign: 'center',
+                          textShadow: theme.palette.mode === 'dark' 
+                            ? '0 4px 16px rgba(156, 39, 176, 0.4)'
+                            : '0 4px 16px rgba(156, 39, 176, 0.3)',
+                          transition: 'all 0.3s ease-in-out',
+                          lineHeight: 1.1
+                        }}
+                      >
                         {stats.types.available.length}
                       </Typography>
                     </Box>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                      <Warning sx={{ fontSize: 40, color: 'secondary.main', opacity: 0.8 }} />
-                      {expandedCards.has('types') ? <ExpandLess /> : <ExpandMore />}
+                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 2 }}>
+                      <Warning sx={{ fontSize: '1.5rem', color: 'secondary.main' }} />
+                      <ExpandMore 
+                        sx={{ 
+                          transform: expandedCards.has('types') ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.3s ease-in-out',
+                          ml: 1,
+                          fontSize: '1.5rem'
+                        }} 
+                      />
                     </Box>
                   </Box>
                   <Collapse in={expandedCards.has('types')}>
@@ -585,20 +778,70 @@ function Dashboard() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={2.8}>
-              <Card sx={{ cursor: 'pointer' }} onClick={() => toggleCardExpansion('sources')}>
+              <Card 
+                sx={{ 
+                  cursor: 'pointer',
+                  borderRadius: 3,
+                  background: theme.palette.mode === 'dark'
+                    ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%)'
+                    : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  border: `1px solid ${alpha(theme.palette.warning.main, 0.1)}`,
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  '&:hover': {
+                    transform: 'translateY(-4px) scale(1.02)',
+                    boxShadow: `0 12px 40px ${alpha(theme.palette.warning.main, 0.25)}`,
+                    border: `1px solid ${alpha(theme.palette.warning.main, 0.3)}`,
+                  }
+                }} 
+                onClick={() => toggleCardExpansion('sources')}
+              >
                 <CardContent>
                   <Box display="flex" alignItems="center" justifyContent="space-between">
                     <Box>
-                      <Typography color="text.secondary" gutterBottom variant="body2">
+                      <Typography 
+                        color="text.secondary" 
+                        gutterBottom 
+                        variant="body1"
+                        sx={{
+                          fontWeight: 700,
+                          fontSize: '0.95rem',
+                          letterSpacing: '0.1em',
+                          textAlign: 'center',
+                          mb: 1.5
+                        }}
+                      >
                         INTEL SOURCES
                       </Typography>
-                      <Typography variant="h4" component="div" color="success.main">
+                      <Typography 
+                        variant="h3" 
+                        component="div" 
+                        color="success.main"
+                        sx={{
+                          fontWeight: 900,
+                          fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                          letterSpacing: '-0.03em',
+                          textAlign: 'center',
+                          textShadow: theme.palette.mode === 'dark' 
+                            ? '0 4px 16px rgba(76, 175, 80, 0.4)'
+                            : '0 4px 16px rgba(76, 175, 80, 0.3)',
+                          transition: 'all 0.3s ease-in-out',
+                          lineHeight: 1.1
+                        }}
+                      >
                         {stats.sources.available.length}
                       </Typography>
                     </Box>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                      <Shield sx={{ fontSize: 40, color: 'success.main', opacity: 0.8 }} />
-                      {expandedCards.has('sources') ? <ExpandLess /> : <ExpandMore />}
+                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 2 }}>
+                      <Shield sx={{ fontSize: '1.5rem', color: 'success.main' }} />
+                      <ExpandMore 
+                        sx={{ 
+                          transform: expandedCards.has('sources') ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.3s ease-in-out',
+                          ml: 1,
+                          fontSize: '1.5rem'
+                        }} 
+                      />
                     </Box>
                   </Box>
                   <Collapse in={expandedCards.has('sources')}>
@@ -618,7 +861,21 @@ function Dashboard() {
           </Grid>
 
           {/* Control Panel */}
-          <Paper sx={{ p: 3, mb: 4, borderRadius: 3 }}>
+          <Paper 
+            sx={{ 
+              p: 3, 
+              mb: 4, 
+              borderRadius: 3,
+              background: theme.palette.mode === 'dark'
+                ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.9) 0%, rgba(20, 20, 30, 0.7) 100%)'
+                : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+              backdropFilter: 'blur(20px)',
+              border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
+              boxShadow: theme.palette.mode === 'dark'
+                ? '0 8px 32px rgba(0, 0, 0, 0.4)'
+                : '0 8px 32px rgba(0, 0, 0, 0.1)',
+            }}
+          >
             <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
               <FilterList sx={{ mr: 1 }} />
               Advanced Threat Filtering
@@ -757,7 +1014,20 @@ function Dashboard() {
           </Paper>
 
           {/* Results Section */}
-          <Paper sx={{ borderRadius: 3, overflow: 'hidden' }}>
+          <Paper 
+            sx={{ 
+              borderRadius: 3, 
+              overflow: 'hidden',
+              background: theme.palette.mode === 'dark'
+                ? 'linear-gradient(135deg, rgba(30, 30, 40, 0.9) 0%, rgba(20, 20, 30, 0.7) 100%)'
+                : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+              backdropFilter: 'blur(20px)',
+              border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
+              boxShadow: theme.palette.mode === 'dark'
+                ? '0 12px 40px rgba(0, 0, 0, 0.3)'
+                : '0 12px 40px rgba(0, 0, 0, 0.08)',
+            }}
+          >
             <Box sx={{ p: 2, borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
               <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center' }}>
                 <Visibility sx={{ mr: 1 }} />
@@ -812,21 +1082,57 @@ function Dashboard() {
                     }}
                     sx={{
                       border: 'none',
+                      borderRadius: 2,
+                      overflow: 'hidden',
+                      '& .MuiDataGrid-main': {
+                        borderRadius: 2,
+                      },
                       '& .MuiDataGrid-cell': {
                         borderColor: theme.palette.mode === 'dark' 
-                          ? 'rgba(255, 255, 255, 0.1)' 
-                          : 'rgba(0, 0, 0, 0.1)',
+                          ? 'rgba(255, 255, 255, 0.08)' 
+                          : 'rgba(0, 0, 0, 0.08)',
+                        fontSize: '1rem',
+                        fontWeight: 500,
+                        padding: '16px 12px',
+                        display: 'flex',
+                        alignItems: 'center',
                       },
                       '& .MuiDataGrid-columnHeaders': {
-                        backgroundColor: alpha(theme.palette.primary.main, 0.1),
+                        backgroundColor: alpha(theme.palette.primary.main, 0.12),
                         borderColor: theme.palette.mode === 'dark' 
                           ? 'rgba(255, 255, 255, 0.1)' 
                           : 'rgba(0, 0, 0, 0.1)',
+                        fontWeight: 800,
+                        fontSize: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em',
+                        minHeight: '56px !important',
+                        '& .MuiDataGrid-columnHeaderTitle': {
+                          fontSize: '1rem',
+                          fontWeight: 800,
+                        }
                       },
-                      '& .MuiDataGrid-row:hover': {
-                        backgroundColor: alpha(theme.palette.primary.main, 0.08),
-                        cursor: 'pointer',
+                      '& .MuiDataGrid-row': {
+                        '&:hover': {
+                          backgroundColor: alpha(theme.palette.primary.main, 0.08),
+                          cursor: 'pointer',
+                          transform: 'translateY(-1px)',
+                          boxShadow: `0 4px 12px ${alpha(theme.palette.primary.main, 0.15)}`,
+                          transition: 'all 0.2s ease-in-out',
+                        },
+                        '&:nth-of-type(even)': {
+                          backgroundColor: theme.palette.mode === 'dark'
+                            ? 'rgba(255, 255, 255, 0.02)'
+                            : 'rgba(0, 0, 0, 0.02)',
+                        }
                       },
+                      '& .MuiDataGrid-footerContainer': {
+                        borderTop: `1px solid ${theme.palette.mode === 'dark' 
+                          ? 'rgba(255, 255, 255, 0.1)' 
+                          : 'rgba(0, 0, 0, 0.1)'}`,
+                        backgroundColor: alpha(theme.palette.background.paper, 0.8),
+                        backdropFilter: 'blur(10px)',
+                      }
                     }}
                   />
                   
@@ -1022,6 +1328,12 @@ function Dashboard() {
             position: 'fixed',
             bottom: 24,
             right: 24,
+            boxShadow: `0 8px 25px ${alpha(theme.palette.primary.main, 0.3)}`,
+            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+            '&:hover': {
+              transform: 'scale(1.1)',
+              boxShadow: `0 12px 35px ${alpha(theme.palette.primary.main, 0.4)}`,
+            }
           }}
         >
           <GetApp />
