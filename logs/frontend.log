@@ -1,0 +1,1824 @@
+
+> threat-intelligence-frontend@0.1.0 dev
+> vite
+
+
+  VITE v4.5.14  ready in 166 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+(node:103124) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+7:37:00 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+7:37:11 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:38:12 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:38:57 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:38:57 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (981:22)
+
+  979 |                           </Grid>
+  980 |                         </Paper>
+> 981 |                       </Collapse>
+      |                       ^
+  982 |                     </Box>
+  983 |                   );
+  984 |                 })}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:981:22
+  979|                            </Grid>
+  980|                          </Paper>
+  981|                        </Collapse>
+     |                        ^
+  982|                      </Box>
+  983|                    );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4760:16)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseReturnStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13151:28)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12807:21)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+7:38:57 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (981:22)
+
+  979 |                           </Grid>
+  980 |                         </Paper>
+> 981 |                       </Collapse>
+      |                       ^
+  982 |                     </Box>
+  983 |                   );
+  984 |                 })}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:981:22
+  979|                            </Grid>
+  980|                          </Paper>
+  981|                        </Collapse>
+     |                        ^
+  982|                      </Box>
+  983|                    );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4760:16)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseReturnStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13151:28)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12807:21)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+7:39:34 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:39:58 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:40:53 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:40:53 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <>. (986:14)
+
+  984 |                   );
+  985 |                 })}
+> 986 |               </Box>
+      |               ^
+  987 |             )}
+  988 |           </Paper>
+  989 |         </Container>
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:986:14
+  984|                    );
+  985|                  })}
+  986|                </Box>
+     |                ^
+  987|              )}
+  988|            </Paper>
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4753:14)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10897:29)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10889:17)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+7:40:53 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <>. (986:14)
+
+  984 |                   );
+  985 |                 })}
+> 986 |               </Box>
+      |               ^
+  987 |             )}
+  988 |           </Paper>
+  989 |         </Container>
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:986:14
+  984|                    );
+  985|                  })}
+  986|                </Box>
+     |                ^
+  987|              )}
+  988|            </Paper>
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4753:14)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10897:29)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10889:17)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.jsxParseExpressionContainer (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4665:31)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4744:36)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4731:32)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+7:41:07 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:42:26 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:42:42 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:42:42 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (995:22)
+
+  993 |                           </Grid>
+  994 |                         </Grid>
+> 995 |                       </Paper>
+      |                       ^
+  996 |                     </Box>
+  997 |                   );
+  998 |                 })}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:995:22
+  993|                            </Grid>
+  994|                          </Grid>
+  995|                        </Paper>
+     |                        ^
+  996|                      </Box>
+  997|                    );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4760:16)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseReturnStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13151:28)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12807:21)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+7:42:42 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (995:22)
+
+  993 |                           </Grid>
+  994 |                         </Grid>
+> 995 |                       </Paper>
+      |                       ^
+  996 |                     </Box>
+  997 |                   );
+  998 |                 })}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:995:22
+  993|                            </Grid>
+  994|                          </Grid>
+  995|                        </Paper>
+     |                        ^
+  996|                      </Box>
+  997|                    );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4760:16)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseReturnStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13151:28)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12807:21)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+/home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (995:22)
+
+  993 |                           </Grid>
+  994 |                         </Grid>
+> 995 |                       </Paper>
+      |                       ^
+  996 |                     </Box>
+  997 |                   );
+  998 |                 })}
+7:42:49 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Expected corresponding JSX closing tag for <Box>. (995:22)
+
+  993 |                           </Grid>
+  994 |                         </Grid>
+> 995 |                       </Paper>
+      |                       ^
+  996 |                     </Box>
+  997 |                   );
+  998 |                 })}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:995:22
+  993|                            </Grid>
+  994|                          </Grid>
+  995|                        </Paper>
+     |                        ^
+  996|                      </Box>
+  997|                    );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4760:16)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12436:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12503:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11683:28)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseReturnStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13151:28)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12807:21)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+7:43:01 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:44:06 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:44:52 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:45:03 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:45:13 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:45:32 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:46:58 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:47:11 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:47:24 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:48:05 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:49:17 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:50:34 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:51:51 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:53:39 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:53:39 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })())}e creator function
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:53:39 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })())}e creator function
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:53:56 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:53:56 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })()}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:53:56 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })()}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:54:10 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 200 /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 200 /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 200 /api/indicators/stats
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 200 /api/indicators/stats
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 304 /api/indicators/stats
+Received Response from the Target: 304 /api/indicators/stats
+7:54:29 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:54:29 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })()}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:54:29 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (120:24)
+
+  118 |                             </Grid>
+  119 |                           </Grid>
+> 120 |                         </Paper>
+      |                         ^
+  121 |                       </>
+  122 |                     );
+  123 |                   })()}
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:120:24
+  118|                              </Grid>
+  119|                            </Grid>
+  120|                          </Paper>
+     |                          ^
+  121|                        </>
+  122|                      );
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.jsxParseElementAt (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4775:18)
+      at JSXParserMixin.jsxParseElement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4782:17)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4792:19)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at JSXParserMixin.parseExpressionBase (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10788:23)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10784:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12904:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+7:55:46 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:57:10 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+7:59:07 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:59:07 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+7:59:07 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+7:59:53 AM [vite] hmr update /src/pages/Dashboard.jsx
+7:59:53 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+7:59:53 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+/home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+7:59:57 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+8:00:52 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Identifier 'stats' has already been declared. (135:9)
+
+  133 |   const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134 |   const [expandedCards, setExpandedCards] = useState(new Set());
+> 135 |   const [stats, setStats] = useState({
+      |          ^
+  136 |     total: 0,
+  137 |     recent_count: 0,
+  138 |     categories: { available: [], breakdown: {} },
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:135:9
+  133|    const [selectedRowForDetails, setSelectedRowForDetails] = useState(null);
+  134|    const [expandedCards, setExpandedCards] = useState(new Set());
+  135|    const [stats, setStats] = useState({
+     |           ^
+  136|      total: 0,
+  137|      recent_count: 0,
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at ScopeHandler.checkRedeclarationInScope (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1647:19)
+      at ScopeHandler.declareName (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:1613:12)
+      at JSXParserMixin.declareNameFromIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7594:16)
+      at JSXParserMixin.checkIdentifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7590:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7529:12)
+      at JSXParserMixin.checkLVal (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:7567:16)
+      at JSXParserMixin.parseVarId (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13421:10)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13392:12)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseStatementListItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12756:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:61)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseBlock (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at JSXParserMixin.parseFunctionBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12110:24)
+      at JSXParserMixin.parseArrowExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12085:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11695:12)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11335:23)
+      at JSXParserMixin.parseExprAtom (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:4797:20)
+      at JSXParserMixin.parseExprSubscripts (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11085:23)
+      at JSXParserMixin.parseUpdate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11070:21)
+      at JSXParserMixin.parseMaybeUnary (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:11050:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10903:61)
+      at JSXParserMixin.parseExprOps (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10908:23)
+      at JSXParserMixin.parseMaybeConditional (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10885:23)
+      at JSXParserMixin.parseMaybeAssign (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10835:21)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:39
+      at JSXParserMixin.allowInAnd (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12431:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:10804:17)
+      at JSXParserMixin.parseVar (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13393:91)
+      at JSXParserMixin.parseVarStatement (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13239:10)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12860:23)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+8:01:41 AM [vite] hmr update /src/pages/Dashboard.jsx
+8:01:41 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: A string literal cannot be used as an imported binding.
+- Did you mean `import { "& .MuiDataGrid-row" as foo }`? (51:35)
+
+  49 |   DarkMode,
+  50 |   LightMode,
+> 51 |   ExpandMore,                      '& .MuiDataGrid-row': {
+     |                                    ^
+  52 |                         cursor: 'pointer',
+  53 |                       },
+  54 |                       '& .MuiDataGrid-row:hover': {
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:51:35
+  49 |    DarkMode,
+  50 |    LightMode,
+  51 |    ExpandMore,                      '& .MuiDataGrid-row': {
+     |                                     ^
+  52 |                          cursor: 'pointer',
+  53 |                        },
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.parseImportSpecifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14423:20)
+      at JSXParserMixin.parseNamedImportSpecifiers (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14411:36)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14251:37)
+      at JSXParserMixin.parseImport (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14244:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12885:27)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+/home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: A string literal cannot be used as an imported binding.
+- Did you mean `import { "& .MuiDataGrid-row" as foo }`? (51:35)
+
+  49 |   DarkMode,
+  50 |   LightMode,
+> 51 |   ExpandMore,                      '& .MuiDataGrid-row': {
+     |                                    ^
+  52 |                         cursor: 'pointer',
+  53 |                       },
+  54 |                       '& .MuiDataGrid-row:hover': {
+8:01:42 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: A string literal cannot be used as an imported binding.
+- Did you mean `import { "& .MuiDataGrid-row" as foo }`? (51:35)
+
+  49 |   DarkMode,
+  50 |   LightMode,
+> 51 |   ExpandMore,                      '& .MuiDataGrid-row': {
+     |                                    ^
+  52 |                         cursor: 'pointer',
+  53 |                       },
+  54 |                       '& .MuiDataGrid-row:hover': {
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:51:35
+  49 |    DarkMode,
+  50 |    LightMode,
+  51 |    ExpandMore,                      '& .MuiDataGrid-row': {
+     |                                     ^
+  52 |                          cursor: 'pointer',
+  53 |                        },
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.parseImportSpecifier (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14423:20)
+      at JSXParserMixin.parseNamedImportSpecifiers (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14411:36)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14251:37)
+      at JSXParserMixin.parseImport (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14244:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12885:27)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+8:02:00 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators/stats
+Sending Request to the Target: GET /api/indicators/stats
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Sending Request to the Target: GET /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators?limit=50&sort=last_seen&order=desc
+Received Response from the Target: 304 /api/indicators/stats
+Received Response from the Target: 304 /api/indicators/stats
+Sending Request to the Target: GET /api/indicators/stats
+Received Response from the Target: 304 /api/indicators/stats
+8:02:29 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:03:36 AM [vite] hmr update /src/pages/Dashboard.jsx
+8:03:36 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Unexpected token, expected "," (31:20)
+
+  29 |   Switch,
+  30 |   FormControlLabel,
+> 31 |                   sx={{
+     |                     ^
+  32 |                     border: 'none',
+  33 |                     '& .MuiDataGrid-cell': {
+  34 |                       borderColor: theme.palette.mode === 'dark' 
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:31:20
+  29 |    Switch,
+  30 |    FormControlLabel,
+  31 |                    sx={{
+     |                      ^
+  32 |                      border: 'none',
+  33 |                      '& .MuiDataGrid-cell': {
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.unexpected (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at JSXParserMixin.expect (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at JSXParserMixin.parseNamedImportSpecifiers (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14404:14)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14251:37)
+      at JSXParserMixin.parseImport (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14244:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12885:27)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+8:03:36 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Unexpected token, expected "," (31:20)
+
+  29 |   Switch,
+  30 |   FormControlLabel,
+> 31 |                   sx={{
+     |                     ^
+  32 |                     border: 'none',
+  33 |                     '& .MuiDataGrid-cell': {
+  34 |                       borderColor: theme.palette.mode === 'dark' 
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:31:20
+  29 |    Switch,
+  30 |    FormControlLabel,
+  31 |                    sx={{
+     |                      ^
+  32 |                      border: 'none',
+  33 |                      '& .MuiDataGrid-cell': {
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.unexpected (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at JSXParserMixin.expect (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at JSXParserMixin.parseNamedImportSpecifiers (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14404:14)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14251:37)
+      at JSXParserMixin.parseImport (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14244:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12885:27)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+/home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Unexpected token, expected "," (31:20)
+
+  29 |   Switch,
+  30 |   FormControlLabel,
+> 31 |                   sx={{
+     |                     ^
+  32 |                     border: 'none',
+  33 |                     '& .MuiDataGrid-cell': {
+  34 |                       borderColor: theme.palette.mode === 'dark' 
+8:03:40 AM [vite] Internal server error: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx: Unexpected token, expected "," (31:20)
+
+  29 |   Switch,
+  30 |   FormControlLabel,
+> 31 |                   sx={{
+     |                     ^
+  32 |                     border: 'none',
+  33 |                     '& .MuiDataGrid-cell': {
+  34 |                       borderColor: theme.palette.mode === 'dark' 
+  Plugin: vite:react-babel
+  File: /home/rafi/projects/Threat_intelligence_dashoard/frontend/src/pages/Dashboard.jsx:31:20
+  29 |    Switch,
+  30 |    FormControlLabel,
+  31 |                    sx={{
+     |                      ^
+  32 |                      border: 'none',
+  33 |                      '& .MuiDataGrid-cell': {
+      at constructor (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at JSXParserMixin.raise (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6630:19)
+      at JSXParserMixin.unexpected (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6650:16)
+      at JSXParserMixin.expect (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:6930:12)
+      at JSXParserMixin.parseNamedImportSpecifiers (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14404:14)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14251:37)
+      at JSXParserMixin.parseImport (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14244:17)
+      at JSXParserMixin.parseStatementContent (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12885:27)
+      at JSXParserMixin.parseStatementLike (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12776:17)
+      at JSXParserMixin.parseModuleItem (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12753:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13325:36)
+      at JSXParserMixin.parseBlockBody (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:13318:10)
+      at JSXParserMixin.parseProgram (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12634:10)
+      at JSXParserMixin.parseTopLevel (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:12624:25)
+      at JSXParserMixin.parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14501:10)
+      at parse (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/parser/lib/index.js:14535:38)
+      at parser (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:261:32)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:189:28
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:113:33
+      at step (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:287:14)
+      at /home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/rafi/projects/Threat_intelligence_dashoard/frontend/node_modules/gensync/index.js:223:11)
+8:05:14 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:07:03 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Received Response from the Target: 200 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:08:27 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:08:55 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:10:19 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:12:59 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:14:04 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc
+8:14:37 AM [vite] hmr update /src/pages/Dashboard.jsx
+Sending Request to the Target: GET /api/indicators?limit=25&order=asc
+Received Response from the Target: 304 /api/indicators?limit=25&order=asc

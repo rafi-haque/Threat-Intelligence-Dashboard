@@ -1,0 +1,422 @@
+import { useState, useEffect } from 'react';
+import apiClient from '../services/api';
+import IndicatorList from '../components/IndicatorList';
+import './Dashboard.css';
+
+function Dashboard() {
+  const [indicators, setIndicators] = useState([]);
+  const [stats, setStats] = useState({
+    total: 25385,
+    recent_count: 25385,
+    types: {
+      available: ['domain', 'hash', 'ip', 'url'],
+      breakdown: { domain: 1, hash: 688, ip: 4547, url: 20149 }
+    },
+    categories: {
+      available: ['Banking Trojan', 'Malicious IP', 'Malicious URL', 'Malware Hash'],
+      breakdown: { 'Banking Trojan': 3, 'Malicious IP': 4543, 'Malicious URL': 20149, 'Malware Hash': 687 }
+    },
+    sources: {
+      available: ['Feodo Tracker', 'FireHOL', 'MalwareBazaar', 'URLhaus'],
+      breakdown: { 'Feodo Tracker': 3, 'FireHOL': 4543, 'MalwareBazaar': 687, 'URLhaus': 20149 }
+    },
+    severities: {
+      available: ['high'],
+      breakdown: { high: 20839 }
+    }
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedSource, setSelectedSource] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedType, setSelectedType] = useState('');
+  const [selectedSeverity, setSelectedSeverity] = useState('');
+  const [lastUpdated, setLastUpdated] = useState(null);
+  
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(50);
+  const [totalItems, setTotalItems] = useState(0);
+  
+  // Sorting state
+  const [sortField, setSortField] = useState('last_seen');
+  const [sortOrder, setSortOrder] = useState('desc');
+
+  const fetchIndicators = async (options = {}) => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      const queryOptions = {
+        query: searchQuery,
+        source: selectedSource,
+        category: selectedCategory,
+        type: selectedType,
+        severity: selectedSeverity,
+        limit: itemsPerPage,
+        offset: (currentPage - 1) * itemsPerPage,
+        sort: sortField,
+        order: sortOrder,
+        ...options
+      };
+      
+      // Remove empty filters
+      Object.keys(queryOptions).forEach(key => {
+        if (queryOptions[key] === '' || queryOptions[key] === null || queryOptions[key] === undefined) {
+          delete queryOptions[key];
+        }
+      });
+      
+      const response = await apiClient.getIndicators(queryOptions);
+      setIndicators(response.items || []);
+      setTotalItems(response.total || response.items?.length || 0);
+      setLastUpdated(new Date());
+    } catch (err) {
+      setError(err.message);
+      setIndicators([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchStats = async () => {
+    try {
+      const realStats = await apiClient.getIndicatorStats();
+      setStats(realStats);
+    } catch (err) {
+      console.log('Using default stats - API not available:', err.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchIndicators();
+    fetchStats();
+  }, [currentPage, itemsPerPage, sortField, sortOrder]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedSource, selectedCategory, selectedType, selectedSeverity]);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setCurrentPage(1);
+    fetchIndicators();
+  };
+
+  const handleRefresh = () => {
+    fetchIndicators();
+    fetchStats();
+  };
+
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  return (
+    <div className="modern-dashboard">
+      {/* Floating shapes for visual interest */}
+      <div className="floating-shapes">
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+      </div>
+      
+      {/* Hero Section */}
+      <div className="hero-section">
+        <div className="hero-content">
+          <div className="status-badge">
+            <div className="status-indicator"></div>
+            <span>LIVE MONITORING</span>
+          </div>
+          
+          <h1 className="hero-title">
+            Threat Intelligence
+            <span className="gradient-text">Dashboard</span>
+          </h1>
+          
+          <p className="hero-description">
+            Advanced threat detection and real-time security intelligence from global sources
+          </p>
+
+          {/* Live Stats Cards */}
+          <div className="hero-stats">
+            <div className="stat-card primary">
+              <div className="stat-icon">🛡️</div>
+              <div className="stat-content">
+                <div className="stat-number">{stats.total.toLocaleString()}</div>
+                <div className="stat-label">Active Threats</div>
+              </div>
+            </div>
+            
+            <div className="stat-card secondary">
+              <div className="stat-icon">⚡</div>
+              <div className="stat-content">
+                <div className="stat-number">{stats.recent_count.toLocaleString()}</div>
+                <div className="stat-label">Recent (24h)</div>
+              </div>
+            </div>
+            
+            <div className="stat-card tertiary">
+              <div className="stat-icon">🎯</div>
+              <div className="stat-content">
+                <div className="stat-number">{stats.types.available.length}</div>
+                <div className="stat-label">Threat Types</div>
+              </div>
+            </div>
+            
+            <div className="stat-card quaternary">
+              <div className="stat-icon">🌐</div>
+              <div className="stat-content">
+                <div className="stat-number">{stats.sources.available.length}</div>
+                <div className="stat-label">Intel Sources</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="hero-background">
+          <div className="grid-pattern"></div>
+          <div className="floating-shapes">
+            <div className="shape shape-1"></div>
+            <div className="shape shape-2"></div>
+            <div className="shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Control Panel */}
+      <div className="control-panel">
+        <div className="panel-header">
+          <div className="panel-title">
+            <span className="panel-icon">⚙️</span>
+            Threat Analysis Console
+          </div>
+          <button 
+            onClick={handleRefresh} 
+            className={`refresh-btn ${loading ? 'loading' : ''}`}
+            disabled={loading}
+          >
+            <span className="refresh-icon">{loading ? '⟳' : '↻'}</span>
+            {loading ? 'Syncing...' : 'Refresh Data'}
+          </button>
+        </div>
+
+        <div className="control-sections">
+          {/* Search Section */}
+          <div className="control-section">
+            <div className="section-header">
+              <span className="section-icon">🔍</span>
+              <span className="section-title">Global Threat Search</span>
+            </div>
+            <form onSubmit={handleSearch} className="search-form">
+              <div className="search-input-group">
+                <input
+                  type="text"
+                  placeholder="Search threats, IPs, domains, hashes, malware families..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="search-input"
+                />
+                <button type="submit" className="search-btn" disabled={loading}>
+                  <span>Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Advanced Filters */}
+          <div className="control-section">
+            <div className="section-header">
+              <span className="section-icon">🎯</span>
+              <span className="section-title">Advanced Filters</span>
+            </div>
+            <div className="filter-grid">
+              <div className="filter-group">
+                <label>Category</label>
+                <select 
+                  value={selectedCategory} 
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="">All Categories</option>
+                  {stats.categories.available.map(category => (
+                    <option key={category} value={category}>
+                      {category} ({(stats.categories.breakdown[category] || 0).toLocaleString()})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="filter-group">
+                <label>Type</label>
+                <select 
+                  value={selectedType} 
+                  onChange={(e) => setSelectedType(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="">All Types</option>
+                  {stats.types.available.map(type => (
+                    <option key={type} value={type}>
+                      {type.toUpperCase()} ({(stats.types.breakdown[type] || 0).toLocaleString()})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="filter-group">
+                <label>Source</label>
+                <select 
+                  value={selectedSource} 
+                  onChange={(e) => setSelectedSource(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="">All Sources</option>
+                  {stats.sources.available.map(source => (
+                    <option key={source} value={source}>
+                      {source} ({(stats.sources.breakdown[source] || 0).toLocaleString()})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="filter-group">
+                <label>Severity</label>
+                <select 
+                  value={selectedSeverity} 
+                  onChange={(e) => setSelectedSeverity(e.target.value)}
+                  className="filter-select"
+                >
+                  <option value="">All Severities</option>
+                  <option value="high">🔴 Critical ({(stats.severities.breakdown.high || 0).toLocaleString()})</option>
+                  <option value="medium">🟡 Medium ({(stats.severities.breakdown.medium || 0).toLocaleString()})</option>
+                  <option value="low">🟢 Low ({(stats.severities.breakdown.low || 0).toLocaleString()})</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          {/* Display Controls */}
+          <div className="control-section">
+            <div className="section-header">
+              <span className="section-icon">📊</span>
+              <span className="section-title">Display Options</span>
+            </div>
+            <div className="display-controls">
+              <div className="control-group">
+                <label>Sort By</label>
+                <div className="sort-group">
+                  <select
+                    value={sortField}
+                    onChange={(e) => setSortField(e.target.value)}
+                    className="sort-select"
+                  >
+                    <option value="last_seen">Latest First</option>
+                    <option value="first_seen">Oldest First</option>
+                    <option value="value">Alphabetical</option>
+                    <option value="type">By Type</option>
+                  </select>
+                  <button
+                    onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}
+                    className="sort-toggle"
+                    title={`Sort ${sortOrder === 'asc' ? 'Descending' : 'Ascending'}`}
+                  >
+                    {sortOrder === 'asc' ? '↑' : '↓'}
+                  </button>
+                </div>
+              </div>
+
+              <div className="control-group">
+                <label>Items per Page</label>
+                <select
+                  value={itemsPerPage}
+                  onChange={(e) => setItemsPerPage(parseInt(e.target.value))}
+                  className="items-select"
+                >
+                  <option value="25">25 items</option>
+                  <option value="50">50 items</option>
+                  <option value="100">100 items</option>
+                  <option value="200">200 items</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Data Table Section */}
+      <div className="data-section">
+        <div className="data-header">
+          <div className="data-title">
+            <span className="data-icon">📋</span>
+            Threat Intelligence Feed
+          </div>
+          <div className="data-meta">
+            <span className="result-count">
+              Showing {indicators.length} of {totalItems.toLocaleString()} threats
+            </span>
+            {lastUpdated && (
+              <span className="last-updated">
+                Updated: {lastUpdated.toLocaleTimeString()}
+              </span>
+            )}
+          </div>
+        </div>
+
+        {error && (
+          <div className="error-banner">
+            <span className="error-icon">⚠️</span>
+            <span className="error-message">{error}</span>
+          </div>
+        )}
+
+        <div className="table-container">
+          <IndicatorList 
+            indicators={indicators}
+            loading={loading}
+            error={error}
+          />
+        </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="pagination">
+            <button
+              onClick={() => setCurrentPage(1)}
+              disabled={currentPage === 1}
+              className="page-btn"
+            >
+              ««
+            </button>
+            <button
+              onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className="page-btn"
+            >
+              «
+            </button>
+            
+            <span className="page-info">
+              Page {currentPage} of {totalPages}
+            </span>
+            
+            <button
+              onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className="page-btn"
+            >
+              »
+            </button>
+            <button
+              onClick={() => setCurrentPage(totalPages)}
+              disabled={currentPage === totalPages}
+              className="page-btn"
+            >
+              »»
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Dashboard;

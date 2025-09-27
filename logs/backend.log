@@ -1,0 +1,205 @@
+
+> threat-intelligence-backend@0.1.0 dev
+> nodemon src/app.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+Connected to MongoDB: tidb
+Database indexes created successfully
+Database connected successfully
+Scheduling ingestion every 30 minutes
+Starting ingestion pipeline...
+Processing feed: Feodo Tracker (feed-1)
+Server running on port 8000
+API available at http://localhost:8000/api
+Received non-JSON data from https://feodotracker.abuse.ch/downloads/ipblocklist.txt, treating as text
+Parsed 3 indicators from feed-1
+Ingestion complete for feed-1: { processed: 3, inserted: 0, updated: 3, errors: 0 }
+Processing feed: FireHOL Level 1 (feed-2)
+Received non-JSON data from https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset, treating as text
+Parsed 0 indicators from feed-2
+No indicators parsed from feed: feed-2
+Processing feed: MalwareBazaar (feed-3)
+Received non-JSON data from https://bazaar.abuse.ch/export/txt/sha256/recent/, treating as text
+Parsed 660 indicators from feed-3
+Ingestion complete for feed-3: { processed: 660, inserted: 0, updated: 660, errors: 0 }
+Processing feed: GreenSnow (feed-4)
+Received non-JSON data from https://blocklist.greensnow.co/greensnow.txt, treating as text
+Parsed 0 indicators from feed-4
+No indicators parsed from feed: feed-4
+Processing feed: URLhaus (feed-5)
+Received non-JSON data from https://urlhaus.abuse.ch/downloads/text_recent/, treating as text
+Parsed 20177 indicators from feed-5
+Ingestion complete for feed-5: { processed: 20177, inserted: 0, updated: 20177, errors: 0 }
+Processing feed: ThreatFox (feed-6)
+Received non-JSON data from https://threatfox.abuse.ch/downloads/ioc_feed.txt, treating as text
+Parsed 0 indicators from feed-6
+No indicators parsed from feed: feed-6
+Processing feed: Maltrail (feed-7)
+Received non-JSON data from https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/malicious/suspicious.txt, treating as text
+Parsed 0 indicators from feed-7
+No indicators parsed from feed: feed-7
+Processing feed: PhishStats (feed-8)
+Received non-JSON data from https://phishstats.info/phish_score.csv, treating as text
+Parsed 0 indicators from feed-8
+No indicators parsed from feed: feed-8
+Processing feed: DigitalSide (feed-9)
+Error processing feed feed-9: Error: Request timeout
+    at ClientRequest.<anonymous> (/home/rafi/projects/Threat_intelligence_dashoard/backend/src/services/fetcher.js:41:14)
+    at Object.onceWrapper (node:events:622:28)
+    at ClientRequest.emit (node:events:508:28)
+    at TLSSocket.emitRequestTimeout (node:_http_client:919:9)
+    at Object.onceWrapper (node:events:622:28)
+    at TLSSocket.emit (node:events:520:35)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+Processing feed: Unit42 (feed-10)
+Failed to fetch https://osint.digitalside.it/Threat-Intel/lists/latestips.txt: Error: socket hang up
+    at TLSSocket.socketCloseListener (node:_http_client:547:27)
+    at TLSSocket.emit (node:events:520:35)
+    at node:net:346:12
+    at TCP.done (node:_tls_wrap:649:7) {
+  code: 'ECONNRESET'
+}
+Received non-JSON data from https://raw.githubusercontent.com/pan-unit42/iocs/master/diamondfox/diamondfox_panels.txt, treating as text
+Parsed 0 indicators from feed-10
+No indicators parsed from feed: feed-10
+All feeds processed: [
+  {
+    success: true,
+    feed_id: 'feed-1',
+    indicators_processed: 3,
+    indicators_inserted: 0,
+    indicators_updated: 3,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  {
+    success: true,
+    feed_id: 'feed-3',
+    indicators_processed: 660,
+    indicators_inserted: 0,
+    indicators_updated: 660,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  {
+    success: true,
+    feed_id: 'feed-5',
+    indicators_processed: 20177,
+    indicators_inserted: 0,
+    indicators_updated: 20177,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, feed_id: 'feed-9', error: 'Request timeout' },
+  { success: false, error: 'No indicators parsed' }
+]
+Ingestion pipeline completed: {
+  total_feeds: 10,
+  successful_feeds: 3,
+  failed_feeds: 7,
+  total_indicators: 20840,
+  timestamp: '2025-09-27T12:36:32.577Z'
+}
+Starting ingestion pipeline...
+Processing feed: Feodo Tracker (feed-1)
+Received non-JSON data from https://feodotracker.abuse.ch/downloads/ipblocklist.txt, treating as text
+Parsed 3 indicators from feed-1
+Ingestion complete for feed-1: { processed: 3, inserted: 0, updated: 3, errors: 0 }
+Processing feed: FireHOL Level 1 (feed-2)
+Received non-JSON data from https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset, treating as text
+Parsed 0 indicators from feed-2
+No indicators parsed from feed: feed-2
+Processing feed: MalwareBazaar (feed-3)
+Received non-JSON data from https://bazaar.abuse.ch/export/txt/sha256/recent/, treating as text
+Parsed 660 indicators from feed-3
+Ingestion complete for feed-3: { processed: 660, inserted: 0, updated: 660, errors: 0 }
+Processing feed: GreenSnow (feed-4)
+Received non-JSON data from https://blocklist.greensnow.co/greensnow.txt, treating as text
+Parsed 0 indicators from feed-4
+No indicators parsed from feed: feed-4
+Processing feed: URLhaus (feed-5)
+Received non-JSON data from https://urlhaus.abuse.ch/downloads/text_recent/, treating as text
+Parsed 20188 indicators from feed-5
+Ingestion complete for feed-5: { processed: 20188, inserted: 11, updated: 20177, errors: 0 }
+Processing feed: ThreatFox (feed-6)
+Received non-JSON data from https://threatfox.abuse.ch/downloads/ioc_feed.txt, treating as text
+Parsed 0 indicators from feed-6
+No indicators parsed from feed: feed-6
+Processing feed: Maltrail (feed-7)
+Received non-JSON data from https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/malicious/suspicious.txt, treating as text
+Parsed 0 indicators from feed-7
+No indicators parsed from feed: feed-7
+Processing feed: PhishStats (feed-8)
+Received non-JSON data from https://phishstats.info/phish_score.csv, treating as text
+Parsed 0 indicators from feed-8
+No indicators parsed from feed: feed-8
+Processing feed: DigitalSide (feed-9)
+Error processing feed feed-9: Error: Request timeout
+    at ClientRequest.<anonymous> (/home/rafi/projects/Threat_intelligence_dashoard/backend/src/services/fetcher.js:41:14)
+    at Object.onceWrapper (node:events:622:28)
+    at ClientRequest.emit (node:events:508:28)
+    at TLSSocket.emitRequestTimeout (node:_http_client:919:9)
+    at Object.onceWrapper (node:events:622:28)
+    at TLSSocket.emit (node:events:520:35)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+Processing feed: Unit42 (feed-10)
+Failed to fetch https://osint.digitalside.it/Threat-Intel/lists/latestips.txt: Error: socket hang up
+    at TLSSocket.socketCloseListener (node:_http_client:547:27)
+    at TLSSocket.emit (node:events:520:35)
+    at node:net:346:12
+    at TCP.done (node:_tls_wrap:649:7) {
+  code: 'ECONNRESET'
+}
+Received non-JSON data from https://raw.githubusercontent.com/pan-unit42/iocs/master/diamondfox/diamondfox_panels.txt, treating as text
+Parsed 0 indicators from feed-10
+No indicators parsed from feed: feed-10
+All feeds processed: [
+  {
+    success: true,
+    feed_id: 'feed-1',
+    indicators_processed: 3,
+    indicators_inserted: 0,
+    indicators_updated: 3,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  {
+    success: true,
+    feed_id: 'feed-3',
+    indicators_processed: 660,
+    indicators_inserted: 0,
+    indicators_updated: 660,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  {
+    success: true,
+    feed_id: 'feed-5',
+    indicators_processed: 20188,
+    indicators_inserted: 11,
+    indicators_updated: 20177,
+    errors: 0
+  },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, error: 'No indicators parsed' },
+  { success: false, feed_id: 'feed-9', error: 'Request timeout' },
+  { success: false, error: 'No indicators parsed' }
+]
+Ingestion pipeline completed: {
+  total_feeds: 10,
+  successful_feeds: 3,
+  failed_feeds: 7,
+  total_indicators: 20851,
+  timestamp: '2025-09-27T13:06:31.838Z'
+}

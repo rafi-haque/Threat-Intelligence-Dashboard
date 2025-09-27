@@ -1,0 +1,24 @@
+# Netlify configuration for React SPA
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  base = "frontend/"
+  command = "npm run build"
+  publish = "dist/"
+
+# Redirect all routes to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (set in Netlify dashboard)
+# VITE_API_URL = "https://your-backend-api.com/api"
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
